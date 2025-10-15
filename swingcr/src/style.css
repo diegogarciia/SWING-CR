@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFF8E7;
+}
+
+#encabezado {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#titulo {
+  font-family: 'Playfair Display', serif;
+  color: #2E4A62; 
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+#barra-navegacion {
+  background-color: #2E4A62; 
+  font-family: 'Raleway', sans-serif;
+}
+
+#barra-navegacion ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#barra-navegacion li {
+  display: inline-block; 
+}
+
+#barra-navegacion li a {
+  display: block;
+  color: #FDF6EC; 
+  text-align: center;
+  padding: 18px 25px;
+  font-size: 18px;
+}
+
+#barra-navegacion li a:hover {
+  background-color: #B87C4B; 
+  color: white;
+}
+
+#bailarines {
+  width: 100%;
+  justify-content: center;
+}
+
+#bailarines img {
+  width: 33.15%;
+  height: auto;
+  display: inline-block;
+  margin-left: 0%;
+}
