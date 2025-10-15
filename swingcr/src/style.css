@@ -69,3 +69,36 @@ body {
   display: inline-block;
   margin-left: 0%;
 }
+
+#sobre-nosotros {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#sobre-nosotros h2 {
+  font-family: 'Playfair Display', serif;
+  color: #2E4A62; 
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contenido-sobre-nosotros {
+  display: flex; 
+}
+
+#todos {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+.contenido-sobre-nosotros p {
+  font-family: 'Raleway', sans-serif;
+  color: #2C2C2C; 
+  text-align: left;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
