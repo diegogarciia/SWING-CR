@@ -37,7 +37,124 @@
       </p>
       </div>
     </section>
+    <section id="horario">
+      <h2 id="titulo-programa">Programa de Actividades</h2>
+      <div class="filtros-programa">
+        <button id="filtro-btn-activo" data-target="tabla-actividades">Actividades</button>
+        <button id="filtro-btn" data-target="tabla-clases">Clases</button>
+      </div>
+      
+      <div id="tabla-actividades"  class="tabla-programa-contenedor activo">
+        <table>
+          <tr>
+            <th class="celda-vacia-esquina"></th>
+            <th class="celda-hora-encabezado" data-hora-id="1230">12:30</th>
+            <th class="celda-hora-encabezado" data-hora-id="1330">13:30</th>
+            <th class="celda-hora-encabezado" data-hora-id="1630">16:30</th>
+            <th class="celda-hora-encabezado" data-hora-id="2000">20:00</th>
+            <th class="celda-hora-encabezado" data-hora-id="2100">21:00</th>
+            <th class="celda-hora-encabezado" data-hora-id="2115">21:15</th>
+            <th class="celda-hora-encabezado" data-hora-id="2230">22:30</th>
+          </tr>
+          <tr>
+            <td class="celda-dia-encabezado" data-dia-id="viernes">Viernes 10</td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="1230"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="1330"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="1630"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="2000" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="2100" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="2115" draggable="true"></td>
+             <td class="celda-evento-grid" data-dia="viernes" data-hora="2230" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-dia-encabezado" data-dia-id="sabado">Sábado 11</td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="1230" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="1330" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="1630" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="2000" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="2100" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="2115" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="2230" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-dia-encabezado" data-dia-id="domingo">Domingo 12</td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="1230" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="1330" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="1630" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="2000"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="2100"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="2115"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="2230"></td>
+          </tr>
+        </table>
+      </div>
 
+      <div id="tabla-clases" class="tabla-programa-contenedor oculto">
+        <table>
+          <tr>
+            <th class="celda-vacia-esquina">Hora</th>
+            <th class="celda-sala-encabezado">Sala Be Hopper</th>
+            <th class="celda-sala-encabezado">Sala New Orleans</th>
+            <th class="celda-sala-encabezado">Sala Savoy</th>
+          </tr>
+          <tr class="dia-separador">
+            <td colspan="4">SÁBADO 11</td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">10:30</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1030" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1030" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1030" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">11:35</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1135" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1135" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1135" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">12:40</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1240" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1240" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1240" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">17:00</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1700" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1700" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1700" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">18:10</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1810" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1810" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1810" draggable="true"></td>
+          </tr>
+          <tr class="dia-separador">
+            <td colspan="4">DOMINGO 12</td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">10:00</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1000" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1000" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1000" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">11:05</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1105" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1105" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1105" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">12:10</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1210" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1210" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1210" draggable="true"></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  
   </body>
   <script type="module" src="/src/main.js"></script>
 </html>
