@@ -26,7 +26,7 @@ body {
 #titulo {
   font-family: 'Playfair Display', serif;
   color: #2E4A62; 
-  font-size: 2.5rem;
+  font-size: 35px;
   margin-top: 10px;
 }
 
@@ -101,4 +101,128 @@ body {
   margin-top: 35px;
   margin-bottom: 20px;
   font-size: 17px;
+}
+
+#horario {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#titulo-programa {
+    font-family: 'Playfair Display', serif;
+    color: #2E4A62; 
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.filtros-programa {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#filtro-btn-activo, #filtro-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+#filtro-btn-activo {
+    color: white; 
+    background-color: #B87C4B;
+}
+
+#filtro-btn {
+    color: white; 
+    background-color: #2E4A62; 
+}
+
+#tabla-actividades {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#tabla-actividades table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 2px solid;
+}
+
+.celda-vacia-esquina {
+    background-color: #B87C4B;
+    color: white; 
+    width: 100px;
+}
+
+.celda-hora-encabezado {
+    background-color: #B87C4B; 
+    color: white;
+    padding: 10px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.celda-dia-encabezado {
+    background-color: #B87C4B; 
+    color: white;
+    padding: 15px 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.celda-evento-grid {
+    background-color: #FFF8E7; 
+    min-height: 80px;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#tabla-clases {
+    max-width: 900px; 
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#tabla-clases table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid;
+}
+
+.celda-sala-encabezado {
+    background-color: #B87C4B; 
+    color: white;
+    padding: 10px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.celda-hora-encabezado-clases {
+    background-color: #B87C4B; 
+    color: white;
+    padding: 15px 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.celda-clase-grid {
+    background-color: #FFF8E7; 
+    min-height: 80px;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dia-separador td {
+    background-color: #2E4A62; 
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+.tabla-programa-contenedor.oculto {
+    display: none;
 }
