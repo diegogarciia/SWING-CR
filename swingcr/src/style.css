@@ -78,6 +78,7 @@ body {
 
 #sobre-nosotros h2 {
   font-family: 'Playfair Display', serif;
+  font-size: 30px;
   color: #2E4A62; 
   text-align: center;
   margin-bottom: 50px;
@@ -225,4 +226,48 @@ body {
 
 .tabla-programa-contenedor.oculto {
     display: none;
+}
+
+#formulario h2 {
+  color: #2E4A62;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#registro-evento-form {
+  color:#FDF6EC;
+  font-family: 'Raleway', sans-serif;
+  background-color: #2E4A62;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 600px;
+  margin-bottom: 50px;
+  margin: auto;
+}
+
+#registro-evento-form label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#registro-evento-form input, #registro-evento-form select, #registro-evento-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+#registro-evento-form button {
+  background-color: #B87C4B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 35%;
 }
