@@ -271,3 +271,21 @@ body {
   text-align: center;
   margin-left: 35%;
 }
+
+.tabla-programa-contenedor.oculto {
+  display: none;
+}
+
+.tabla-programa-contenedor.activo {
+  display: block;
+}
+
+.evento-registrado {
+  background-color: #2E4A62; 
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9em;
+}
