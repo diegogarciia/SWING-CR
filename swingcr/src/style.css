@@ -289,3 +289,52 @@ body {
   font-weight: bold;
   font-size: 0.9em;
 }
+
+footer {
+  background-color: #2E4A62;
+  color: #FDF6EC;
+  font-family: 'Raleway', sans-serif;
+  padding: 40px 20px 20px; 
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1200px; 
+}
+
+.footer-columna {
+  margin-inline: 210px;
+  min-width: 280px; 
+  text-align: center;
+}
+
+.footer-columna h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-columna p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer-columna a {
+  color: #FDF6EC; 
+}
+
+.footer-columna a:hover {
+  color: #ffc107; 
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #4a6a84; 
+  font-size: 14px;
+  color: #a7c0d4;
+}
