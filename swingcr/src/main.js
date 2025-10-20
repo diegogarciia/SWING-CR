@@ -108,3 +108,104 @@ document.addEventListener('DOMContentLoaded', () => {
     ubicacionSelect.disabled = false;
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const celdas = document.querySelectorAll(".celda-evento-grid, .celda-clase-grid");
+  let celdaOrigen = null;
+
+  function tipoCelda(celda) {
+    return celda.classList.contains("celda-evento-grid") ? "actividad" : "clase";
+  }
+
+  function esCeldaPermitida(celda) {
+    if (tipoCelda(celda) === "clase") return true;
+
+    const dia = celda.getAttribute("data-dia");
+    const hora = parseInt(celda.getAttribute("data-hora"));
+
+    if (!dia || isNaN(hora)) return false;
+    if (!["viernes", "sabado", "domingo"].includes(dia)) return false;
+    if (dia === "viernes" && hora < 2000) return false;
+    if (dia === "domingo" && hora > 2000) return false;
+
+    return true;
+  }
+
+  celdas.forEach((celda) => {
+    if (esCeldaPermitida(celda)) {
+      celda.setAttribute("draggable", "true");
+    } else {
+      celda.removeAttribute("draggable");
+    }
+
+    celda.addEventListener("dragstart", (e) => {
+      const target = e.currentTarget; 
+      if (!esCeldaPermitida(target)) {
+        e.preventDefault();
+        return;
+      }
+
+      celdaOrigen = target;
+      e.dataTransfer.effectAllowed = "move";
+      e.dataTransfer.setData("text/html", target.innerHTML);
+      target.classList.add("arrastrando");
+    });
+
+    celda.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = "move";
+      e.currentTarget.classList.add("sobre-celda");
+    });
+
+    celda.addEventListener("dragleave", (e) => {
+      e.currentTarget.classList.remove("sobre-celda");
+    });
+
+    celda.addEventListener("drop", (e) => {
+      e.preventDefault();
+      const destino = e.currentTarget; 
+
+      destino.classList.remove("sobre-celda");
+      if (!celdaOrigen || celdaOrigen === destino) return;
+
+      const tipoOrigen = tipoCelda(celdaOrigen);
+      const tipoDestino = tipoCelda(destino);
+
+      if (tipoOrigen !== tipoDestino) {
+        alert("No puedes mover una clase a la tabla de actividades ni viceversa.");
+        return;
+      }
+
+      if (tipoOrigen === "actividad") {
+        if (!esCeldaPermitida(celdaOrigen) || !esCeldaPermitida(destino)) {
+          alert("No puedes mover una actividad fuera del horario permitido (viernes 20:00 a domingo 20:00).");
+          return;
+        }
+      }
+
+      const contenidoOrigen = celdaOrigen.innerHTML;
+      const contenidoDestino = destino.innerHTML;
+      const estiloOrigen = celdaOrigen.getAttribute("style") || "";
+      const estiloDestino = destino.getAttribute("style") || "";
+
+      const clasesOrigen = celdaOrigen.className.replace("arrastrando", "").replace("sobre-celda", "").trim();
+      const clasesDestino = destino.className.replace("arrastrando", "").replace("sobre-celda", "").trim();
+
+      celdaOrigen.innerHTML = contenidoDestino;
+      destino.innerHTML = contenidoOrigen;
+
+      celdaOrigen.setAttribute("style", estiloDestino);
+      destino.setAttribute("style", estiloOrigen);
+      celdaOrigen.className = clasesDestino;
+      destino.className = clasesOrigen;
+
+      celdaOrigen.classList.remove("arrastrando");
+      celdaOrigen = null;
+    });
+
+    celda.addEventListener("dragend", (e) => {
+      e.currentTarget.classList.remove("arrastrando");
+      celdaOrigen = null;
+    });
+  });
+});
