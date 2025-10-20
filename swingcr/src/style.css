@@ -360,3 +360,13 @@ footer {
     margin: 20px 0;
   }
 }
+
+.arrastrando {
+  opacity: 0.6;
+  border: none;
+}
+
+.sobre-celda {
+  border: 2px dashed #555;
+  background-color: rgba(0, 0, 0, 0.05);
+}
