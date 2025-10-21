@@ -49,13 +49,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('registro-evento-form');
   const tipoEventoSelect = document.getElementById('tipo-evento');
   const ubicacionSelect = document.getElementById('ubicacion-evento');
-  
+  const tipoClaseSelect = document.getElementById('nivel-clase');
+  const tipoActividadSelect = document.getElementById('tipo-actividad');
+  const bandaSelect = document.getElementById('banda');
+  const descripcionInput = document.getElementById('descripcion-actividad');
+
   tipoEventoSelect.addEventListener('change', () => {
       if (tipoEventoSelect.value === 'actividad') {
           ubicacionSelect.disabled = true;
           ubicacionSelect.value = '';
+          tipoClaseSelect.disabled = true;
+          tipoClaseSelect.value = '';
+          tipoActividadSelect.disabled = false;
+          descripcionInput.disabled = false;
+          bandaSelect.disabled =  false;
       } else {
           ubicacionSelect.disabled = false;
+          tipoClaseSelect.disabled = false;
+          tipoActividadSelect.disabled = true;
+          tipoActividadSelect.value = '';
+          bandaSelect.disabled =  true;
+          bandaSelect.value = '';
+          descripcionInput.disabled = true;
+          descripcionInput.value = '';
       }
   });
 
