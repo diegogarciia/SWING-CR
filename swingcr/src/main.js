@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const ubicacionSelect = document.getElementById('ubicacion-evento');
   const tipoClaseSelect = document.getElementById('nivel-clase');
   const tipoActividadSelect = document.getElementById('tipo-actividad');
-  const bandaSelect = document.getElementById('banda');
+  const bandaSelect = document.getElementById('banda-evento');
   const descripcionInput = document.getElementById('descripcion-actividad');
 
   tipoEventoSelect.addEventListener('change', () => {
