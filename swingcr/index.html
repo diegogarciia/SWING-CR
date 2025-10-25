@@ -158,17 +158,17 @@
       <h2>Registrar un evento</h2>
       <form id="registro-evento-form">
         <label for="tipo-evento">Tipo de evento:</label>
-        <select id="tipo-evento" name="tipo-evento" novalidate>
+        <select id="tipo-evento" name="tipo-evento" required>
           <option value="" disabled selected>Seleccione un tipo</option>
           <option value="clase">Clase</option>
           <option value="actividad">Actividad</option>
         </select>
 
         <label for="nombre-evento">Nombre del evento:</label>
-        <input type="text" id="nombre-evento" name="nombre-evento" novalidate />
+        <input type="text" id="nombre-evento" name="nombre-evento" required />
 
         <label for="ubicacion-evento">Ubicación del evento:</label>
-        <select id="ubicacion-evento" name="ubicacion-evento" novalidate>
+        <select id="ubicacion-evento" name="ubicacion-evento" required>
           <option value="" disabled selected>Seleccione una ubicación</option>
           <option value="behopper">Behopper</option>
           <option value="neworleans">New Orleans</option>
@@ -176,7 +176,7 @@
         </select>
 
         <label for="dia-evento">Día del evento:</label>
-        <select id="dia-evento" name="dia-evento" novalidate>
+        <select id="dia-evento" name="dia-evento" required>
           <option value="" disabled selected>Seleccione un día</option>
           <option value="viernes">Viernes 10</option>
           <option value="sabado">Sábado 11</option>
@@ -184,7 +184,7 @@
         </select>
 
         <label for="nivel-clase">Nivel de clase:</label>
-        <select id="nivel-clase" name="nivel-clase" novalidate>
+        <select id="nivel-clase" name="nivel-clase" required>
           <option value="" disabled selected>Seleccione un nivel</option>
           <option value="basico">Básico</option>
           <option value="intermedio">Intermedio</option>
@@ -192,14 +192,14 @@
         </select>
 
         <label for="banda-evento">¿Hay una banda?</label>
-        <select id="banda-evento" name="banda-evento" novalidate>
+        <select id="banda-evento" name="banda-evento" required>
           <option value="" disabled selected>Seleccione una opción</option>
           <option value="banda-si">Sí</option>
           <option value="banda-no">No</option>
         </select>
 
         <label for="tipo-actividad">Tipo de actividad:</label>
-        <select id="tipo-actividad" name="tipo-actividad" novalidate>
+        <select id="tipo-actividad" name="tipo-actividad" required>
           <option value="" disabled selected>Seleccione un tipo</option>
           <option value="tester">Taster</option>
           <option value="social">Social</option>
@@ -208,7 +208,7 @@
         </select>
 
         <label for="profesor-evento">Profesor:</label>
-        <select id="profesor-evento" name="profesor-evento" novalidate>
+        <select id="profesor-evento" name="profesor-evento" required>
           <option value="" disabled selected>Seleccione un profesor</option>
           <option value="profesor1">Hyunjung & Anders</option>
           <option value="profesor2">Marta & Pedro</option>
@@ -216,7 +216,7 @@
         </select>
 
         <label for="estilo-evento">Estilo:</label>
-        <select id="estilo-evento" name="estilo-evento" novalidate>
+        <select id="estilo-evento" name="estilo-evento" required>
           <option value="" disabled selected>Seleccione un estilo</option>
           <option value="estilo1">Lindy hop</option>
           <option value="estilo2">Shag</option>
@@ -227,7 +227,7 @@
         <input type="text" id="descripcion-actividad" name="descripcion-actividad" />
 
         <label for="hora-evento">Hora del evento:</label>
-        <input type="time" id="hora-evento" name="hora-evento" novalidate />
+        <input type="time" id="hora-evento" name="hora-evento" required />
 
         <button type="submit" id="registrar-evento">Registrar Evento</button>
       </form>
