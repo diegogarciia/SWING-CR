@@ -1,6 +1,9 @@
 import './style.css'
+import { Evento } from './evento.js';
+import { Horario } from './horario.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  const horario = new Horario();
   const botonesFiltro = document.querySelectorAll('.filtros-programa button');
   const contenedoresTabla = document.querySelectorAll('.tabla-programa-contenedor');
   const tituloPrograma = document.getElementById('titulo-programa');
@@ -114,6 +117,21 @@ document.addEventListener('DOMContentLoaded', () => {
     
     nuevoEventoDiv.innerHTML = `<strong>${nombreEvento}</strong>`;
     celdaDestino.appendChild(nuevoEventoDiv);
+
+    const evento = new Evento();
+    evento.tipo = nuevoEventoDiv.dataset.tipo.toLowerCase();
+    evento.nombre = nuevoEventoDiv.dataset.nombre;
+    evento.ubicacion = nuevoEventoDiv.dataset.ubicacion;
+    evento.dia = nuevoEventoDiv.dataset.dia;
+    evento.nivelClase = nuevoEventoDiv.dataset.nivel;
+    evento.banda = nuevoEventoDiv.dataset.banda;
+    evento.tipoActividad = nuevoEventoDiv.dataset.tipoactividad;
+    evento.profesor = nuevoEventoDiv.dataset.profesor;
+    evento.estilo = nuevoEventoDiv.dataset.estilo;
+    evento.descripcionActividad = nuevoEventoDiv.dataset.descripcion;
+    evento.hora = nuevoEventoDiv.dataset.hora;
+
+    horario.agregarEvento(evento);
 
     form.reset();
     tipoEventoSelect.dispatchEvent(new Event('change'));
@@ -255,4 +273,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  horario.mostrarHorario();
 });
