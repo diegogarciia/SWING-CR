@@ -70,10 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
       celdaDestino = document.querySelector(`.celda-evento-grid[data-dia="${dia}"][data-hora="${hora}"]`);
     } else if (tipoEvento === 'clase') {
       const ubicacion = ubicacionSelect.value;
-      if (dia === 'viernes') {
-        alert('No se pueden registrar clases los viernes.');
-        return;
-      }
       celdaDestino = document.querySelector(`.celda-clase-grid[data-hora="${hora}"][data-sala="${ubicacion}"]`);
     }
     
