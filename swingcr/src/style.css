@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFF8E7;
+}
+
+#encabezado {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#titulo {
+  font-family: 'Playfair Display', serif;
+  color: #2E4A62; 
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+#barra-navegacion {
+  background-color: #2E4A62; 
+  font-family: 'Raleway', sans-serif;
+}
+
+#barra-navegacion ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#barra-navegacion li {
+  display: inline-block; 
+}
+
+#barra-navegacion li a {
+  display: block;
+  color: #FDF6EC; 
+  text-align: center;
+  padding: 18px 25px;
+  font-size: 18px;
+}
+
+#barra-navegacion li a:hover {
+  background-color: #B87C4B; 
+  color: white;
+}
+
+#bailarines {
+  width: 100%;
+  justify-content: center;
+}
+
+#bailarines img {
+  width: 33.15%;
+  height: auto;
+  display: inline-block;
+  margin-left: 0%;
+}
+
+#sobre-nosotros {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#sobre-nosotros h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #2E4A62; 
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contenido-sobre-nosotros {
+  display: flex; 
+}
+
+#todos {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+.contenido-sobre-nosotros p {
+  font-family: 'Raleway', sans-serif;
+  color: #2C2C2C; 
+  text-align: left;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+#horario {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#titulo-programa {
+    font-family: 'Playfair Display', serif;
+    color: #2E4A62; 
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.filtros-programa {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#filtro-btn-activo, #filtro-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+#filtro-btn-activo {
+    color: white; 
+    background-color: #B87C4B;
+}
+
+#filtro-btn {
+    color: white; 
+    background-color: #2E4A62; 
+}
+
+#tabla-actividades {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#tabla-actividades table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 2px solid;
+}
+
+.celda-vacia-esquina {
+    background-color: #B87C4B;
+    color: white; 
+    width: 100px;
+}
+
+.celda-hora-encabezado {
+    background-color: #B87C4B; 
+    color: white;
+    padding: 10px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.celda-dia-encabezado {
+    background-color: #B87C4B; 
+    color: white;
+    padding: 15px 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.celda-evento-grid {
+    background-color: #FFF8E7; 
+    min-height: 80px;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#tabla-clases {
+    max-width: 900px; 
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#tabla-clases table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid;
+}
+
+.celda-sala-encabezado {
+    background-color: #B87C4B; 
+    color: white;
+    padding: 10px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.celda-hora-encabezado-clases {
+    background-color: #B87C4B; 
+    color: white;
+    padding: 15px 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.celda-clase-grid {
+    background-color: #FFF8E7; 
+    min-height: 80px;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dia-separador td {
+    background-color: #2E4A62; 
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+.tabla-programa-contenedor.oculto {
+    display: none;
+}
+
+#formulario h2 {
+  color: #2E4A62;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#registro-evento-form {
+  color:#FDF6EC;
+  font-family: 'Raleway', sans-serif;
+  background-color: #2E4A62;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 600px;
+  margin-bottom: 50px;
+  margin: auto;
+}
+
+#registro-evento-form label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#registro-evento-form input, #registro-evento-form select, #registro-evento-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+#registro-evento-form button {
+  background-color: #B87C4B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 35%;
+}
+
+.tabla-programa-contenedor.oculto {
+  display: none;
+}
+
+.evento-registrado {
+  background-color: #2E4A62; 
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+footer {
+  background-color: #2E4A62;
+  color: #FDF6EC;
+  font-family: 'Raleway', sans-serif;
+  padding: 40px 20px 20px; 
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1200px; 
+}
+
+.footer-columna {
+  margin-inline: 210px;
+  min-width: 280px; 
+  text-align: center;
+}
+
+.footer-columna h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-columna p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer-columna a {
+  color: #FDF6EC; 
+}
+
+.footer-columna a:hover {
+  color: #ffc107; 
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #4a6a84; 
+  font-size: 14px;
+  color: #a7c0d4;
+}
+
+@media (max-width: 768px) {
+  .contenido-sobre-nosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #todos {
+    max-width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-columna {
+    margin: 20px 0;
+  }
+}
+
+.arrastrando {
+  opacity: 0.6;
+  border: none;
+}
+
+.sobre-celda {
+  border: 2px dashed #555;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* === ESTILOS DEL MODAL (VERSIÓN SENCILLA) === */
+
+/* El fondo oscuro */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Centra el contenido */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Clase para mostrar el modal con JS */
+.modal.activo {
+  display: flex;
+}
+
+/* El cuadro blanco con la información */
+.modal-contenido {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Botón de cierre (la '×') */
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #aaa;
+}
+.cerrar:hover {
+  color: #333;
+}
+
+/* Clase para ocultar las filas de información que no apliquen */
+.modal-info-oculto {
+  display: none;
+}

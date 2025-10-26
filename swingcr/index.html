@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/src/images/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VII Festival Swing Ciudad Real</title>
+  </head>
+  <body>
+    <header>
+      <div id="encabezado">
+        <img src="/src/images/logo.png" alt="logo" id="logo">
+        <div id="titulo" class="titulo">VII Festival Swing Ciudad Real</div>
+      </div>
+      <nav id="barra-navegacion">
+        <ul>
+          <li><a href="#encabezado">Home</a></li>
+          <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+          <li><a href="#horario">Horario</a></li>
+          <li><a href="#formulario">Registrar un evento</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="bailarines">
+      <img src="/src/images/bailarines1.png" alt="bailarines1">
+      <img src="/src/images/bailarines2.png" alt="bailarines2">
+      <img src="/src/images/bailarines3.png" alt="bailarines3">
+    </div>
+    <section id="sobre-nosotros">
+      <h2>EL FESTIVAL</h2>
+      <div class="contenido-sobre-nosotros">
+      <img src="/src/images/todos.jpg" alt="todos" id="todos">
+      <p>
+        El fin de semana del 10 al 12 de octubre es la fecha elegida para la celebración del VII Festival Swing Ciudad Real. Tras seis ediciones, la primera de ellas en formato Exchange (y una pandemia de por medio) este festival sigue creciendo. La quinta edición contó con más de 200 bailarines venidos de diferentes puntos del país.<br><br>
+        Además, hasta ahora han participado profesores de la talla de Núria Bonet, Álex Mas, Lee Meidan, Lourdes Collado, Vincent Pitou, Carlos Cayuela, Carla Stinus, Andrés Lázaro, María & Aurélien, María & Núria, Ari & Simon, Clàudia, la Demo Swing Lab y Héctor y Sonia, Aiala y Gurutz, Tyedric Hill y Viktor Lillard, Quinndy, Tamara Lobato y Lara Cano, Rossana Tamiello; y bandas como The Jazz on Five, Basement Band, Le dancing Pepa, Enric Peidro Swingtet y la Old Dixieland Band.
+      </p>
+      </div>
+    </section>
+    <section id="horario">
+      <h2 id="titulo-programa">Programa de Actividades</h2>
+      <div class="filtros-programa">
+        <button id="filtro-btn-activo" data-target="tabla-actividades">Actividades</button>
+        <button id="filtro-btn" data-target="tabla-clases">Clases</button>
+      </div>
+      
+      <div id="tabla-actividades"  class="tabla-programa-contenedor activo">
+        <table>
+          <tr>
+            <th class="celda-vacia-esquina"></th>
+            <th class="celda-hora-encabezado" data-hora-id="1230">12:30</th>
+            <th class="celda-hora-encabezado" data-hora-id="1330">13:30</th>
+            <th class="celda-hora-encabezado" data-hora-id="1630">16:30</th>
+            <th class="celda-hora-encabezado" data-hora-id="2000">20:00</th>
+            <th class="celda-hora-encabezado" data-hora-id="2100">21:00</th>
+            <th class="celda-hora-encabezado" data-hora-id="2115">21:15</th>
+            <th class="celda-hora-encabezado" data-hora-id="2230">22:30</th>
+          </tr>
+          <tr>
+            <td class="celda-dia-encabezado" data-dia-id="viernes">Viernes 10</td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="1230"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="1330"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="1630"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="2000" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="2100" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="viernes" data-hora="2115" draggable="true"></td>
+             <td class="celda-evento-grid" data-dia="viernes" data-hora="2230" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-dia-encabezado" data-dia-id="sabado">Sábado 11</td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="1230" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="1330" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="1630" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="2000" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="2100" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="2115" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="sabado" data-hora="2230" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-dia-encabezado" data-dia-id="domingo">Domingo 12</td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="1230" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="1330" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="1630" draggable="true"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="2000"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="2100"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="2115"></td>
+            <td class="celda-evento-grid" data-dia="domingo" data-hora="2230"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="tabla-clases" class="tabla-programa-contenedor oculto">
+        <table>
+          <tr>
+            <th class="celda-vacia-esquina">Hora</th>
+            <th class="celda-sala-encabezado">Sala Be Hopper</th>
+            <th class="celda-sala-encabezado">Sala New Orleans</th>
+            <th class="celda-sala-encabezado">Sala Savoy</th>
+          </tr>
+          <tr class="dia-separador">
+            <td colspan="4">VIERNES 10</td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">22:00</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="2200" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="2200" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="2200" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">23:30</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="2330" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="2330" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="2330" draggable="true"></td>
+          </tr>
+          <tr class="dia-separador">
+            <td colspan="4">SÁBADO 11</td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">10:30</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1030" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1030" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1030" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">11:35</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1135" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1135" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1135" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">12:40</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1240" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1240" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1240" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">17:00</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1700" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1700" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1700" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">18:10</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1810" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1810" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1810" draggable="true"></td>
+          </tr>
+          <tr class="dia-separador">
+            <td colspan="4">DOMINGO 12</td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">10:00</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1000" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1000" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1000" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">11:05</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1105" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1105" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1105" draggable="true"></td>
+          </tr>
+          <tr>
+            <td class="celda-hora-encabezado-clases">12:10</td>
+            <td class="celda-clase-grid" data-sala="behopper" data-hora="1210" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="neworleans" data-hora="1210" draggable="true"></td>
+            <td class="celda-clase-grid" data-sala="savoy" data-hora="1210" draggable="true"></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="formulario">
+      <h2>Registrar un evento</h2>
+      <form id="registro-evento-form">
+        <label for="tipo-evento">Tipo de evento:</label>
+        <select id="tipo-evento" name="tipo-evento" required>
+          <option value="" disabled selected>Seleccione un tipo</option>
+          <option value="clase">Clase</option>
+          <option value="actividad">Actividad</option>
+        </select>
+
+        <label for="nombre-evento">Nombre del evento:</label>
+        <input type="text" id="nombre-evento" name="nombre-evento" required />
+
+        <label for="ubicacion-evento">Ubicación del evento:</label>
+        <select id="ubicacion-evento" name="ubicacion-evento" required>
+          <option value="" disabled selected>Seleccione una ubicación</option>
+          <option value="behopper">Behopper</option>
+          <option value="neworleans">New Orleans</option>
+          <option value="savoy">Savoy</option>
+        </select>
+
+        <label for="dia-evento">Día del evento:</label>
+        <select id="dia-evento" name="dia-evento" required>
+          <option value="" disabled selected>Seleccione un día</option>
+          <option value="viernes">Viernes 10</option>
+          <option value="sabado">Sábado 11</option>
+          <option value="domingo">Domingo 12</option>
+        </select>
+
+        <label for="nivel-clase">Nivel de clase:</label>
+        <select id="nivel-clase" name="nivel-clase" required>
+          <option value="" disabled selected>Seleccione un nivel</option>
+          <option value="basico">Básico</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+
+        <label for="banda-evento">¿Hay una banda?</label>
+        <select id="banda-evento" name="banda-evento" required>
+          <option value="" disabled selected>Seleccione una opción</option>
+          <option value="banda-si">Sí</option>
+          <option value="banda-no">No</option>
+        </select>
+
+        <label for="tipo-actividad">Tipo de actividad:</label>
+        <select id="tipo-actividad" name="tipo-actividad" required>
+          <option value="" disabled selected>Seleccione un tipo</option>
+          <option value="tester">Taster</option>
+          <option value="social">Social</option>
+          <option value="concierto">Concierto</option>
+          <option value="mix&match">Mix & Match</option>
+        </select>
+
+        <label for="profesor-evento">Profesor:</label>
+        <select id="profesor-evento" name="profesor-evento" required>
+          <option value="" disabled selected>Seleccione un profesor</option>
+          <option value="profesor1">Hyunjung & Anders</option>
+          <option value="profesor2">Marta & Pedro</option>
+          <option value="profesor3">Swinghappy</option>
+        </select>
+
+        <label for="estilo-evento">Estilo:</label>
+        <select id="estilo-evento" name="estilo-evento" required>
+          <option value="" disabled selected>Seleccione un estilo</option>
+          <option value="estilo1">Lindy hop</option>
+          <option value="estilo2">Shag</option>
+          <option value="estilo3">Sólo jazz</option>
+        </select>
+
+        <label for="descripcion-actividad">Descripción de la actividad:</label>
+        <input type="text" id="descripcion-actividad" name="descripcion-actividad" />
+
+        <label for="hora-evento">Hora del evento:</label>
+        <input type="time" id="hora-evento" name="hora-evento" required />
+
+        <button type="submit" id="registrar-evento">Registrar Evento</button>
+      </form>
+      </div>
+    </section>
+    <div id="modal-evento" class="modal oculto">
+      <div class="modal-contenido">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <h3 id="modal-nombre">Nombre</h3>
+        <p><strong>Tipo:</strong> <span id="modal-tipo-evento"></span></p>
+        <p><strong>Día:</strong> <span id="modal-dia-evento"></span></p>
+        <p><strong>Hora:</strong> <span id="modal-hora-evento"></span></p>
+        <p><strong>Ubicación:</strong> <span id="modal-ubicacion-evento"></span></p>
+        <p><strong>Nivel:</strong> <span id="modal-nivel-evento"></span></p>
+        <p><strong>Profesor:</strong> <span id="modal-profesor-evento"></span></p>
+        <p><strong>Estilo:</strong> <span id="modal-estilo-evento"></span></p>
+        <p><strong>Banda:</strong> <span id="modal-banda-evento"></span></p>
+        <p><strong>Tipo de actividad:</strong> <span id="modal-tipo-actividad-evento"></span></p>
+        <p><strong>Descripción:</strong> <span id="modal-descripcion-evento"></span></p>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-container" id="contacto">
+      
+      <div class="footer-columna">
+        <h2>Síguenos en redes sociales</h2>
+        <div class="iconos-redes">
+          <a href="https://www.facebook.com/swingcr">facebook</a>
+          <a href="https://www.instagram.com/swingcr">instagram</a>
+          <a href="https://www.twitter.com/swingcr">twitter</a>
+        </div>
+      </div>
+      
+      <div class="footer-columna">
+        <h2>Contacto</h2>
+        <p>Correo: <a href="mailto:info@swingcr.com">infoswingcr@gmail.com</a></p>
+        <p>Teléfono: +34 123 456 789</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 VII Festival Swing Ciudad Real. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</html>
