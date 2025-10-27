@@ -24,10 +24,15 @@ export class Horario {
     }
 
     mostrarHorario() {
+
         console.log("Horario de todos los eventos:");
+
         this.eventos.forEach(evento => {
+
             evento.mostrarEvento();
+
         });
+        
     }
 
 }
